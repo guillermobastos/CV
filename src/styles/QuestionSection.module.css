@@ -1,0 +1,39 @@
+/* components/QuestionSection.module.css */
+
+.main-container {
+    display: flex;
+    margin-top: 5%;
+}
+
+.container {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+}
+
+.question {
+    display: flex;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.response {
+    display: block;
+    justify-content: left;
+    align-items: last;
+    font-size: 0.9rem;
+}
+
+.response p {
+    text-align: left;
+}
+
+.question img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}

@@ -1,0 +1,36 @@
+/* Importar las capas base, componentes y utilidades de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('../../public/fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Azonix',sans-serif;
+  letter-spacing: 0.6pt;
+  @apply bg-white text-gray-900;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  @apply font-bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  font-size: 2rem;
+  font-family: 'Aznonix', sans-serif;
+}
+
+
+
+

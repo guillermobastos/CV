@@ -1,0 +1,96 @@
+/* styles/MyComponent.module.css */
+
+.container {
+    color: #ffffff;
+    padding: 30px;
+    margin-top: 2%;
+    border-radius: 20px;
+    position: relative; /* Posición relativa para facilitar el posicionamiento de los pseudoelementos */
+    height: 100vh;
+}
+
+.container::before,
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%; /* Ancho del 50% para cada imagen */
+    background-size: cover; /* Ajuste del tamaño de la imagen */
+    background-repeat: no-repeat; /* Evita la repetición */
+    opacity: 0.6; /* Opacidad reducida para las imágenes */
+    border-radius: 20px; /* Mismo radio de borde que el contenedor */
+}
+
+.container::before {
+    left: 0; /* Imagen a la izquierda */
+    background-image: url('../../public/dogeverse_launch.jpeg');
+}
+
+.container::after {
+    right: 0; /* Imagen a la derecha */
+    background-image: url('../../public/dogeverse_timer.jpeg');
+}
+
+.container > * {
+    position: relative; /* Asegura que el contenido dentro del contenedor tenga una posición relativa */
+    z-index: 1; /* Coloca el contenido por encima de las imágenes de fondo */
+}
+
+.header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 30%;
+    height: 220px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    min-width: 440px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-phases {
+    display: flex;
+    width: 70%;
+}
+
+.phase {
+    min-width: 80%;
+    margin-top: 10px;
+    margin-left: 22%;
+}
+
+.phase-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.phase-description {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    width: max-content;
+}
+
+.question span {
+    color: orange;
+}
+
+.image-container {
+    width: 100px;
+    height: 100px;
+}

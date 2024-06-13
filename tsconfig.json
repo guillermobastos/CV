@@ -1,26 +1,48 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "target": "es5", // Compila el código a ES5 para una mejor compatibilidad
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // Define las bibliotecas que se utilizarán
+    "allowJs": true, // Permite la inclusión de archivos JavaScript
+    "skipLibCheck": true, // Omite la verificación de tipos en los archivos de declaración
+    "strict": true, // Habilita todas las verificaciones estrictas
+    "forceConsistentCasingInFileNames": true, // Fuerza el uso de nombres de archivo consistentes
+    "noEmit": true, // No emite archivos, solo verifica el tipo
+    "esModuleInterop": true, // Habilita interoperabilidad con módulos ES
+    "module": "esnext", // Usa el sistema de módulos ES
+    "moduleResolution": "node", // Usa la resolución de módulos Node.js
+    "resolveJsonModule": true, // Permite la importación de módulos JSON
+    "isolatedModules": true, // Asegura que cada archivo actúe como un módulo independiente
+    "jsx": "preserve", // Conserva el JSX en la salida compilada
+    "baseUrl": ".", // Define la base de las rutas relativas
+    "paths": { // Define alias para rutas
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/styles/*": [
+        "src/styles/*"
+      ],
+      "@/pages/*": [
+        "src/pages/*"
+      ],
+      "@/utils/*": [
+        "src/utils/*"
+      ],
+      "@/cursor/*": [
+        "src/img/cursor/*"
+      ]
+    },
+    "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ], // Incluye estos archivos en la compilación
+  "exclude": [
+    "node_modules"
+  ] // Excluye la carpeta node_modules
 }
