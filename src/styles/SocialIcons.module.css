@@ -1,0 +1,53 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 20px; */
+    gap: 30px;
+    background-image: url('/dogeverse_social.jfif');
+    width: 50%;
+    min-height: 80vh;
+    opacity: 0.6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon {
+    /* color: #000; */
+    font-size: 5rem;
+    position: absolute;
+    animation: blink-animation 1.2s infinite alternate; /* Aplica la animación de parpadeo */
+}
+
+/* Posiciona los iconos en las esquinas */
+.icon-0 {
+    top: 12%;
+    left: 12%;
+}
+
+.icon-1 {
+    top: 11%;
+    right: 10%;
+}
+
+.icon-2 {
+    bottom: 9%;
+    left: 13%;
+}
+
+.icon-3 {
+    bottom: 10%;
+    right: 10%;
+}
+
+/* Definición de la animación de parpadeo */
+@keyframes blink-animation {
+    0% {
+        opacity: 2; /* Totalmente visible */
+    }
+    100% {
+        opacity: 0; /* Totalmente invisible */
+    }
+}

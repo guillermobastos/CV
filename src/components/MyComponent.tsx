@@ -31,7 +31,7 @@ const MyComponent: React.FC = () => {
               title: "Repository",
               description: (
                 <a
-                  href="https://github.com/guillermobastos/dudas"
+                  href="https://github.com/guillermobastos/Predicciones"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.githubLink} // Clase de estilos para el enlace
@@ -86,7 +86,7 @@ const MyComponent: React.FC = () => {
               title: "Repository",
               description: (
                 <a
-                  href="https://github.com/guillermobastos/dudas"
+                  href="https://github.com/guillermobastos/carreras_openwebinars"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.githubLink} // Clase de estilos para el enlace

@@ -3,10 +3,10 @@
 .container {
     color: #ffffff;
     padding: 30px;
-    margin-top: 2%;
-    border-radius: 20px;
-    position: relative; /* Posición relativa para facilitar el posicionamiento de los pseudoelementos */
-    height: 100vh;
+    margin-top: 1%;
+    /* border-radius: 20px; */
+    position: relative; 
+    height: 100%;
 }
 
 .container::before,
@@ -19,7 +19,7 @@
     background-size: cover; /* Ajuste del tamaño de la imagen */
     background-repeat: no-repeat; /* Evita la repetición */
     opacity: 0.6; /* Opacidad reducida para las imágenes */
-    border-radius: 20px; /* Mismo radio de borde que el contenedor */
+    /* border-radius: 20px;  */
 }
 
 .container::before {
@@ -40,7 +40,7 @@
 .header {
     font-size: 1.6rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .project {
